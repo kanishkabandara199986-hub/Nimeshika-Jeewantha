@@ -25,11 +25,6 @@ export function createEnvelopeComponent(onOpen: () => void): HTMLElement {
       <!-- Outer Envelope Body -->
       <div class="envelope-wrapper">
         <div class="envelope-back"></div>
-        <div class="envelope-flap" id="envelope-flap">
-          <svg viewBox="0 0 500 200" preserveAspectRatio="none" class="flap-svg">
-            <path d="M0,0 L250,150 L500,0 Z" fill="#1b3819" stroke="#d4af37" stroke-width="2"/>
-          </svg>
-        </div>
 
         <!-- Envelope Front Card -->
         <div class="envelope-inner-card glass-card">
