@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Luxury Sri Lankan Garden Wedding Invitation - Animations & Performance
+   ========================================================================== */
+
+/* Hardware Accelerated Layers */
+.reveal-fade-up,
+.gallery-item,
+.glass-card,
+.btn-luxury,
+.contact-box,
+#leaf-canvas {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+/* 1. Gentle Floating Botanical Motion */
+@keyframes floatLeafSlow {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes floatLeafReverse {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-4deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* 2. Soft Breathing Glow */
+@keyframes softPulseGlow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+}
+
+/* 3. Elegant Text Reveal Slide-Up */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delay Utility Classes */
+.delay-1 { transition-delay: 0.12s; }
+.delay-2 { transition-delay: 0.24s; }
+.delay-3 { transition-delay: 0.36s; }
+.delay-4 { transition-delay: 0.48s; }
+
+/* 4. Image Reveal Mask Transition */
+.img-mask-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-mask-reveal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--dark-forest);
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 5;
+}
+
+.img-mask-reveal.is-visible::after {
+  transform: scaleY(0);
+}
+
+/* Utility Animations */
+.float-leaf-decor {
+  animation: floatLeafSlow 6s ease-in-out infinite;
+}
+
+.float-leaf-reverse {
+  animation: floatLeafReverse 7s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: softPulseGlow 4s ease-in-out infinite;
+}
+
+/* Respect Reduced Motion Preferences for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  #leaf-canvas {
+    display: none;
+  }
+
+  .reveal-fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .img-mask-reveal::after {
+    display: none !important;
+  }
+}

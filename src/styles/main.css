@@ -1,0 +1,958 @@
+/* ==========================================================================
+   Luxury Sri Lankan Garden Wedding Invitation - Main Stylesheet
+   Theme: Mobile-First Luxury Editorial
+   Color Palette:
+     - Dark Forest:  #132a13
+     - Forest Green: #31572c
+     - Olive Green:  #4f772d
+     - Soft Olive:   #90a955
+     - Light Cream:  #ecf39e
+   Royal Gold Accents:
+     - Metallic Gold: #d4af37
+     - Light Gold:    #f6e6b4
+     - Rich Gold:     #c5a059
+     - Deep Gold:     #a37c27
+   ========================================================================== */
+
+:root {
+  /* Base Palette */
+  --dark-forest: #132a13;
+  --forest-green: #31572c;
+  --olive-green: #4f772d;
+  --soft-olive: #90a955;
+  --light-cream: #ecf39e;
+
+  /* Royal Premium Gold System */
+  --gold-primary: #d4af37;
+  --gold-light: #f6e6b4;
+  --gold-accent: #e6ca65;
+  --gold-dark: #b8860b;
+  --gold-metallic-gradient: linear-gradient(135deg, #f6e6b4 0%, #d4af37 40%, #c5a059 75%, #f6e6b4 100%);
+  --gold-text-gradient: linear-gradient(180deg, #fff3c4 0%, #e6ca65 50%, #b8860b 100%);
+  --gold-border-gradient: linear-gradient(135deg, rgba(246, 230, 180, 0.6) 0%, rgba(212, 175, 55, 0.4) 50%, rgba(184, 134, 11, 0.6) 100%);
+
+  /* Translucent & Glass Variants */
+  --bg-gradient-hero: linear-gradient(165deg, #0f220f 0%, #162f15 45%, #0a170a 100%);
+  --glass-bg: rgba(22, 45, 21, 0.55);
+  --glass-border: rgba(212, 175, 55, 0.35);
+  --glass-border-hover: rgba(246, 230, 180, 0.7);
+  --glass-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(246, 230, 180, 0.2);
+  
+  --text-gold-main: #f6e6b4;
+  --text-gold-subtle: #d4af37;
+  --text-muted: rgba(246, 230, 180, 0.85);
+
+  /* Typography System */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --container-width: 1140px;
+  --container-narrow: 760px;
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--dark-forest);
+  color: var(--text-gold-main);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--dark-forest);
+  background-image: var(--bg-gradient-hero);
+  color: var(--text-gold-main);
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Canvas Background for Floating Botanicals & Petals */
+#leaf-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99;
+  opacity: 0.92;
+  will-change: transform;
+}
+
+#app {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* Royal Gold Typography Classes */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.text-gold, .text-gradient {
+  background: var(--gold-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text-gold-solid {
+  color: var(--gold-light);
+}
+
+/* Audio Controller Button - Mobile Optimized */
+.audio-control-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(15, 34, 15, 0.85);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 12px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  touch-action: manipulation;
+}
+
+.audio-control-btn:hover, .audio-control-btn:active {
+  transform: scale(1.08);
+  border-color: var(--gold-light);
+  background: rgba(49, 87, 44, 0.9);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4);
+}
+
+.audio-control-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* Glassmorphism Card Panels */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  padding: 44px 28px;
+  position: relative;
+  overflow: hidden;
+  contain: content;
+  transition: border-color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--glass-border-hover);
+}
+
+/* Corner Botanical SVGs */
+.corner-decor {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  pointer-events: none;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+
+.corner-decor.top-left { top: 12px; left: 12px; }
+.corner-decor.top-right { top: 12px; right: 12px; transform: scaleX(-1); }
+.corner-decor.bottom-left { bottom: 12px; left: 12px; transform: scaleY(-1); }
+.corner-decor.bottom-right { bottom: 12px; right: 12px; transform: scale(-1); }
+
+/* Layout Section Wrappers */
+.section-wrapper {
+  padding: 80px 20px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-wrapper.narrow {
+  max-width: var(--container-narrow);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--gold-primary);
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 500;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  color: var(--gold-light);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+/* Botanical Dividers */
+.botanical-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 24px 0;
+  width: 100%;
+}
+
+.botanical-divider .line {
+  height: 1px;
+  flex: 1;
+  max-width: 100px;
+  background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+}
+
+.botanical-divider .leaf-icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--gold-light);
+  opacity: 0.9;
+}
+
+/* Luxury Interactive Buttons - Touch Friendly */
+.btn-luxury {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 36px;
+  min-height: 52px;
+  background: linear-gradient(135deg, #254621 0%, #3e6328 100%);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-light);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(212, 175, 55, 0.2);
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  z-index: 1;
+}
+
+.btn-luxury::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(246, 230, 180, 0.35), transparent);
+  transition: left 0.6s ease;
+  z-index: -1;
+}
+
+.btn-luxury:hover, .btn-luxury:active {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-accent) 100%);
+  color: var(--dark-forest);
+  border-color: var(--gold-light);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.45);
+}
+
+.btn-luxury:hover::before {
+  left: 100%;
+}
+
+.btn-luxury svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.btn-luxury:hover svg {
+  transform: translateX(4px);
+}
+
+/* Accessibility Focus */
+:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 4px;
+}
+
+/* ==========================================================================
+   COMPONENT STYLES (MOBILE-FIRST OPTIMIZED)
+   ========================================================================== */
+
+/* 1. HERO SECTION */
+.hero-section {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 60px 16px 40px;
+  background: radial-gradient(ellipse at center, rgba(49, 87, 44, 0.45) 0%, rgba(15, 34, 15, 0.96) 80%);
+}
+
+.hero-card {
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+  padding: 48px 24px;
+  background: rgba(22, 45, 21, 0.6);
+  border: 1px solid var(--gold-border-gradient);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65), 0 0 25px rgba(212, 175, 55, 0.15);
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 10;
+}
+
+.hero-tag {
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 2.5vw, 0.88rem);
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--gold-primary);
+  margin-bottom: 18px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.hero-names {
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hero-names .bride-name,
+.hero-names .groom-name {
+  display: block;
+  font-size: clamp(3rem, 10vw, 5.2rem);
+  color: var(--gold-light);
+  letter-spacing: 0.03em;
+}
+
+.hero-names .ampersand {
+  display: block;
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--gold-primary);
+  margin: 8px 0;
+}
+
+.hero-date-block {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.hero-day {
+  font-family: var(--font-body);
+  font-size: clamp(0.85rem, 3vw, 1.05rem);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--gold-primary);
+  margin-bottom: 6px;
+  display: block;
+  font-weight: 500;
+}
+
+.hero-date {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 6vw, 2.4rem);
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--gold-primary);
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-mouse {
+  width: 20px;
+  height: 32px;
+  border: 2px solid var(--gold-primary);
+  border-radius: 10px;
+  position: relative;
+}
+
+.scroll-wheel {
+  width: 4px;
+  height: 7px;
+  background: var(--gold-light);
+  border-radius: 2px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollWheel 2s infinite ease-in-out;
+}
+
+@keyframes scrollWheel {
+  0% { transform: translate(-50%, 0); opacity: 1; }
+  80% { transform: translate(-50%, 12px); opacity: 0; }
+  100% { transform: translate(-50%, 0); opacity: 0; }
+}
+
+/* 2. OUR STORY SECTION */
+.story-card {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.story-text {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 4vw, 1.45rem);
+  line-height: 1.8;
+  color: var(--text-muted);
+  font-weight: 300;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* 3. COUPLE GALLERY SECTION */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--glass-border);
+  background: var(--forest-green);
+  contain: content;
+}
+
+.gallery-item.portrait-hero {
+  border-radius: 180px 180px 24px 24px;
+  height: 520px;
+}
+
+.gallery-item.rounded-frame {
+  border-radius: 24px;
+  height: 440px;
+}
+
+.gallery-img-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: brightness(0.94) contrast(1.04);
+  decoding: async;
+}
+
+.gallery-item:hover .gallery-img, .gallery-item:active .gallery-img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 65%, rgba(15, 34, 15, 0.85) 100%);
+  pointer-events: none;
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: var(--gold-light);
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* 4. WEDDING DETAILS SECTION */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.detail-card-item {
+  background: rgba(22, 45, 21, 0.5);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 32px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  contain: content;
+}
+
+.detail-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-light);
+  margin-bottom: 4px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.detail-icon-wrap svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+
+.detail-title {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--gold-primary);
+  font-weight: 500;
+}
+
+.detail-value {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 1.8rem);
+  color: var(--gold-light);
+  line-height: 1.3;
+}
+
+.venue-lines {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.venue-name {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--gold-light);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.details-map-action {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* 5. QUOTE SECTION */
+.quote-card {
+  text-align: center;
+  padding: 56px 24px;
+  background: radial-gradient(circle at center, rgba(49, 87, 44, 0.45) 0%, rgba(15, 34, 15, 0.65) 100%);
+}
+
+.quote-symbol {
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--gold-primary);
+  opacity: 0.45;
+  margin-bottom: -15px;
+  display: block;
+}
+
+.quote-text {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  line-height: 1.5;
+  color: var(--gold-light);
+  font-style: italic;
+  font-weight: 300;
+  max-width: 620px;
+  margin: 0 auto 24px;
+}
+
+/* 6. THANK YOU & CONTACT SECTION */
+.thank-you-card {
+  text-align: center;
+  padding: 52px 24px;
+}
+
+.thank-you-main {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 6vw, 2.6rem);
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+
+.thank-you-sub {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.contact-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  min-height: 52px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--gold-primary);
+  border-radius: 50px;
+  color: var(--gold-light);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+}
+
+.contact-box:hover, .contact-box:active {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+.contact-box svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--gold-light);
+}
+
+/* 7. FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 48px 20px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  position: relative;
+  background: rgba(10, 23, 10, 0.95);
+}
+
+.footer-names {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.footer-copyright {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+}
+
+/* ==========================================================================
+   SMARTPHONE / MOBILE SPECIFIC MEDIA QUERIES (< 768px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 56px 16px;
+  }
+  .hero-section {
+    padding: 40px 12px 32px;
+  }
+  .hero-card {
+    padding: 36px 18px;
+    border-radius: 20px;
+  }
+  .corner-decor {
+    width: 45px;
+    height: 45px;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .gallery-item.portrait-hero {
+    height: 380px;
+    border-radius: 140px 140px 20px 20px;
+  }
+  .gallery-item.rounded-frame {
+    height: 340px;
+    border-radius: 20px;
+  }
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .detail-card-item {
+    padding: 24px 16px;
+  }
+  .story-card, .thank-you-card, .quote-card {
+    padding: 36px 16px;
+    border-radius: 20px;
+  }
+  .btn-luxury {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 0.85rem;
+  }
+  .audio-control-btn {
+    bottom: 20px;
+    right: 16px;
+    width: 46px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-card {
+    padding: 28px 14px;
+  }
+  .gallery-item.portrait-hero {
+    height: 320px;
+  }
+  .gallery-item.rounded-frame {
+    height: 290px;
+  }
+}
+
+/* ==========================================================================
+   LOADING SCREEN & OPEN INVITATION ENVELOPE MODAL STYLES
+   ========================================================================== */
+
+.envelope-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: radial-gradient(ellipse at center, rgba(31, 59, 30, 0.98) 0%, rgba(10, 23, 10, 0.99) 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.envelope-loader-content {
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+}
+
+.loader-monogram {
+  font-family: var(--font-heading);
+  font-size: 3.6rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.loader-sparkle {
+  color: var(--gold-primary);
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.loader-text {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--gold-light);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.loader-bar-wrap {
+  width: 100%;
+  height: 3px;
+  background: rgba(212, 175, 55, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.loader-bar-fill {
+  width: 0%;
+  height: 100%;
+  background: var(--gold-metallic-gradient);
+  animation: loadFill 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes loadFill {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Envelope Container Card */
+.envelope-card-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.envelope-inner-card {
+  text-align: center;
+  padding: 44px 28px 36px;
+  background: rgba(22, 45, 21, 0.9);
+  border: 1px solid var(--gold-primary);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.25);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.envelope-to {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  color: var(--gold-primary);
+  display: block;
+  font-weight: 500;
+}
+
+.envelope-names {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 7vw, 3rem);
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+
+.envelope-date {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+
+/* Royal 3D Wax Seal Button */
+.wax-seal-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin: 12px 0;
+  touch-action: manipulation;
+}
+
+.wax-seal {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #f6e6b4 0%, #d4af37 40%, #8b6508 100%);
+  border: 2px solid var(--gold-light);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), inset 0 2px 4px rgba(255, 255, 255, 0.6), 0 0 18px rgba(212, 175, 55, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.35s ease;
+}
+
+.wax-seal-container:hover .wax-seal,
+.wax-seal-container:active .wax-seal {
+  transform: scale(1.12) rotate(4deg);
+  box-shadow: 0 14px 35px rgba(212, 175, 55, 0.6), inset 0 2px 6px rgba(255, 255, 255, 0.8);
+}
+
+.wax-monogram {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #132a13;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.wax-seal-hint {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--gold-primary);
+}
+
+/* Exit Animations */
+.overlay-exit-anim {
+  transform: scale(1.05);
+}
+
+.seal-open-anim {
+  animation: sealPop 0.5s forwards ease-out;
+}
+
+@keyframes sealPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3) rotate(-10deg); filter: brightness(1.3); }
+  100% { transform: scale(0); opacity: 0; }
+}
+
