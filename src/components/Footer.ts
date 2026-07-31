@@ -45,7 +45,7 @@ export function createFooterComponent(): HTMLElement {
       <div class="footer-names">${weddingData.couple.brideName} & ${weddingData.couple.groomName}</div>
       <p class="footer-copyright">
         13 August 2026 • Monaragala, Sri Lanka<br/>
-        Made with <span style="color: #ecf39e;">❤</span> for our special day
+        Made with <span style="color: #fb6f92;">❤</span> for our special day
       </p>
     </footer>
   `;

@@ -6,20 +6,20 @@
 
 /* ── CSS Custom Properties ─────────────────────── */
 :root {
-  --color-ivory: #FAF7F2;
-  --color-ivory-dark: #F0EBE1;
-  --color-ivory-paper: #EDE8DF;
-  --color-cream: #F5F0E8;
-  --color-sage: #7C9A7E;
-  --color-sage-light: #A8BFA9;
-  --color-sage-dark: #5A7A5C;
-  --color-olive: #6B7C5C;
-  --color-olive-dark: #4F5C42;
-  --color-gold: #C9A96E;
-  --color-gold-light: #DFC089;
-  --color-charcoal: #2C2C2C;
-  --color-charcoal-light: #4A4A4A;
-  --color-charcoal-muted: #6E6E6E;
+  --color-ivory: #ffe5ec;
+  --color-ivory-dark: #ffc2d1;
+  --color-ivory-paper: #ffe5ec;
+  --color-cream: #ffe5ec;
+  --color-sage: #ff8fab;
+  --color-sage-light: #ffc2d1;
+  --color-sage-dark: #fb6f92;
+  --color-olive: #ff8fab;
+  --color-olive-dark: #d64972;
+  --color-gold: #fb6f92;
+  --color-gold-light: #ff8fab;
+  --color-charcoal: #5c0f24;
+  --color-charcoal-light: #7a1c36;
+  --color-charcoal-muted: #9e2a4b;
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Lora', Georgia, serif;

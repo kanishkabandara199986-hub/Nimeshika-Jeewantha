@@ -42,12 +42,12 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <path d="M20 70 Q60 40 100 25 Q140 10 180 20" stroke="#7C9A7E" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-            <ellipse cx="45" cy="52" rx="12" ry="6" fill="#A8BFA9" opacity="0.7" transform="rotate(-40 45 52)" />
-            <ellipse cx="75" cy="36" rx="14" ry="7" fill="#7C9A7E" opacity="0.65" transform="rotate(-50 75 36)" />
-            <ellipse cx="110" cy="22" rx="11" ry="5.5" fill="#A8BFA9" opacity="0.6" transform="rotate(-45 110 22)" />
-            <ellipse cx="148" cy="14" rx="12" ry="6" fill="#7C9A7E" opacity="0.7" transform="rotate(-35 148 14)" />
-            <circle cx="100" cy="24" r="3" fill="#C9A96E" opacity="0.5" />
+            <path d="M20 70 Q60 40 100 25 Q140 10 180 20" stroke="#ff8fab" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+            <ellipse cx="45" cy="52" rx="12" ry="6" fill="#ffc2d1" opacity="0.7" transform="rotate(-40 45 52)" />
+            <ellipse cx="75" cy="36" rx="14" ry="7" fill="#ff8fab" opacity="0.65" transform="rotate(-50 75 36)" />
+            <ellipse cx="110" cy="22" rx="11" ry="5.5" fill="#ffc2d1" opacity="0.6" transform="rotate(-45 110 22)" />
+            <ellipse cx="148" cy="14" rx="12" ry="6" fill="#ff8fab" opacity="0.7" transform="rotate(-35 148 14)" />
+            <circle cx="100" cy="24" r="3" fill="#fb6f92" opacity="0.5" />
           </motion.svg>
 
           {/* Initials */}

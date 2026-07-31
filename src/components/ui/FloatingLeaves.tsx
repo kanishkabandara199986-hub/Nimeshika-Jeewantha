@@ -14,7 +14,7 @@ interface Leaf {
   color: string
 }
 
-const LEAF_COLORS = ['#7C9A7E', '#A8BFA9', '#5A7A5C', '#C9A96E', '#8AA88C']
+const LEAF_COLORS = ['#ffe5ec', '#ffc2d1', '#ffb3c6', '#ff8fab', '#fb6f92']
 
 function generateLeaves(count: number): Leaf[] {
   return Array.from({ length: count }, (_, i) => ({

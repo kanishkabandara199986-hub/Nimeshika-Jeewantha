@@ -29,7 +29,7 @@ export function ClosingPhotoSection() {
         aria-hidden="true"
       >
         <svg width="300" height="400" viewBox="0 0 300 400" fill="none">
-          <ellipse cx="250" cy="200" rx="200" ry="300" fill="#7C9A7E" />
+          <ellipse cx="250" cy="200" rx="200" ry="300" fill="#ffc2d1" />
         </svg>
       </div>
 

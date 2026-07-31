@@ -52,8 +52,8 @@ export function SectionTitle({
         >
           <div className="h-px w-12 bg-gold" />
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-            <circle cx="6" cy="6" r="2.5" fill="#C9A96E" />
-            <circle cx="6" cy="6" r="5" stroke="#C9A96E" strokeWidth="0.6" fill="none" />
+            <circle cx="6" cy="6" r="2.5" fill="#fb6f92" />
+            <circle cx="6" cy="6" r="5" stroke="#fb6f92" strokeWidth="0.6" fill="none" />
           </svg>
           <div className="h-px w-12 bg-gold" />
         </motion.div>

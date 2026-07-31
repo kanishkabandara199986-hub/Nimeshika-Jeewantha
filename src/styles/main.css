@@ -1,46 +1,41 @@
 /* ==========================================================================
    Luxury Sri Lankan Garden Wedding Invitation - Main Stylesheet
    Theme: Mobile-First Luxury Editorial
-   Color Palette:
-     - Dark Forest:  #132a13
-     - Forest Green: #31572c
-     - Olive Green:  #4f772d
-     - Soft Olive:   #90a955
-     - Light Cream:  #ecf39e
-   Royal Gold Accents:
-     - Metallic Gold: #d4af37
-     - Light Gold:    #f6e6b4
-     - Rich Gold:     #c5a059
-     - Deep Gold:     #a37c27
+   Color Palette (Soft Light Pink):
+     - Softest Blush: #ffe5ec
+     - Soft Pastel:   #ffc2d1
+     - Medium Rose:   #ffb3c6
+     - Romantic Accent:#ff8fab
+     - Deep Rose:     #fb6f92
    ========================================================================== */
 
 :root {
-  /* Base Palette */
-  --dark-forest: #132a13;
-  --forest-green: #31572c;
-  --olive-green: #4f772d;
-  --soft-olive: #90a955;
-  --light-cream: #ecf39e;
+  /* Base Soft Light Pink Palette */
+  --dark-forest: #ffe5ec;
+  --forest-green: #ffc2d1;
+  --olive-green: #ffb3c6;
+  --soft-olive: #ff8fab;
+  --light-cream: #ffe5ec;
 
-  /* Royal Premium Gold System */
-  --gold-primary: #d4af37;
-  --gold-light: #f6e6b4;
-  --gold-accent: #e6ca65;
-  --gold-dark: #b8860b;
-  --gold-metallic-gradient: linear-gradient(135deg, #f6e6b4 0%, #d4af37 40%, #c5a059 75%, #f6e6b4 100%);
-  --gold-text-gradient: linear-gradient(180deg, #fff3c4 0%, #e6ca65 50%, #b8860b 100%);
-  --gold-border-gradient: linear-gradient(135deg, rgba(246, 230, 180, 0.6) 0%, rgba(212, 175, 55, 0.4) 50%, rgba(184, 134, 11, 0.6) 100%);
+  /* Royal Soft Pink & Rose System */
+  --gold-primary: #fb6f92;
+  --gold-light: #ff8fab;
+  --gold-accent: #ffb3c6;
+  --gold-dark: #d64972;
+  --gold-metallic-gradient: linear-gradient(135deg, #ffc2d1 0%, #ff8fab 40%, #fb6f92 75%, #d64972 100%);
+  --gold-text-gradient: linear-gradient(180deg, #fb6f92 0%, #d64972 50%, #7a1c36 100%);
+  --gold-border-gradient: linear-gradient(135deg, rgba(255, 179, 198, 0.8) 0%, rgba(255, 143, 171, 0.6) 50%, rgba(251, 111, 146, 0.8) 100%);
 
   /* Translucent & Glass Variants */
-  --bg-gradient-hero: linear-gradient(165deg, #0f220f 0%, #162f15 45%, #0a170a 100%);
-  --glass-bg: rgba(22, 45, 21, 0.55);
-  --glass-border: rgba(212, 175, 55, 0.35);
-  --glass-border-hover: rgba(246, 230, 180, 0.7);
-  --glass-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(246, 230, 180, 0.2);
+  --bg-gradient-hero: linear-gradient(165deg, #ffe5ec 0%, #ffc2d1 50%, #ffe5ec 100%);
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(255, 143, 171, 0.5);
+  --glass-border-hover: rgba(251, 111, 146, 0.85);
+  --glass-shadow: 0 20px 45px rgba(251, 111, 146, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.9);
   
-  --text-gold-main: #f6e6b4;
-  --text-gold-subtle: #d4af37;
-  --text-muted: rgba(246, 230, 180, 0.85);
+  --text-gold-main: #5c0f24;
+  --text-gold-subtle: #7a1c36;
+  --text-muted: #9e2a4b;
 
   /* Typography System */
   --font-heading: 'Cormorant Garamond', Georgia, serif;
@@ -129,16 +124,16 @@ h1, h2, h3, h4, .font-serif {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(15, 34, 15, 0.85);
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid var(--gold-primary);
-  color: var(--gold-light);
+  color: #fb6f92;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 12px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 25px rgba(251, 111, 146, 0.25), 0 0 12px rgba(255, 179, 198, 0.4);
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   touch-action: manipulation;
 }
@@ -146,8 +141,8 @@ h1, h2, h3, h4, .font-serif {
 .audio-control-btn:hover, .audio-control-btn:active {
   transform: scale(1.08);
   border-color: var(--gold-light);
-  background: rgba(49, 87, 44, 0.9);
-  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4);
+  background: #ffc2d1;
+  box-shadow: 0 12px 30px rgba(251, 111, 146, 0.4);
 }
 
 .audio-control-btn svg {
@@ -258,9 +253,9 @@ h1, h2, h3, h4, .font-serif {
   gap: 12px;
   padding: 16px 36px;
   min-height: 52px;
-  background: linear-gradient(135deg, #254621 0%, #3e6328 100%);
-  border: 1px solid var(--gold-primary);
-  color: var(--gold-light);
+  background: linear-gradient(135deg, #fb6f92 0%, #ff8fab 100%);
+  border: 1px solid #ffb3c6;
+  color: #ffffff;
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 600;
@@ -271,7 +266,7 @@ h1, h2, h3, h4, .font-serif {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 25px rgba(251, 111, 146, 0.3), 0 0 15px rgba(255, 179, 198, 0.3);
   transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
   touch-action: manipulation;
   z-index: 1;
@@ -284,17 +279,17 @@ h1, h2, h3, h4, .font-serif {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(246, 230, 180, 0.35), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   transition: left 0.6s ease;
   z-index: -1;
 }
 
 .btn-luxury:hover, .btn-luxury:active {
   transform: translateY(-3px);
-  background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-accent) 100%);
-  color: var(--dark-forest);
-  border-color: var(--gold-light);
-  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.45);
+  background: linear-gradient(135deg, #d64972 0%, #fb6f92 100%);
+  color: #ffffff;
+  border-color: #ff8fab;
+  box-shadow: 0 15px 35px rgba(251, 111, 146, 0.45);
 }
 
 .btn-luxury:hover::before {
@@ -331,7 +326,7 @@ h1, h2, h3, h4, .font-serif {
   justify-content: center;
   position: relative;
   padding: 60px 16px 40px;
-  background: radial-gradient(ellipse at center, rgba(49, 87, 44, 0.45) 0%, rgba(15, 34, 15, 0.96) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 194, 209, 0.6) 0%, rgba(255, 229, 236, 0.98) 80%);
 }
 
 .hero-card {
@@ -339,11 +334,11 @@ h1, h2, h3, h4, .font-serif {
   width: 100%;
   text-align: center;
   padding: 48px 24px;
-  background: rgba(22, 45, 21, 0.6);
+  background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--gold-border-gradient);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65), 0 0 25px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 30px 60px rgba(251, 111, 146, 0.18), 0 0 25px rgba(255, 179, 198, 0.25);
   border-radius: var(--radius-lg);
   position: relative;
   z-index: 10;
@@ -387,7 +382,7 @@ h1, h2, h3, h4, .font-serif {
 .hero-date-block {
   margin-top: 24px;
   padding-top: 24px;
-  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  border-top: 1px solid rgba(251, 111, 146, 0.25);
 }
 
 .hero-day {
@@ -437,7 +432,7 @@ h1, h2, h3, h4, .font-serif {
 .scroll-wheel {
   width: 4px;
   height: 7px;
-  background: var(--gold-light);
+  background: var(--gold-primary);
   border-radius: 2px;
   position: absolute;
   top: 5px;
@@ -471,8 +466,8 @@ h1, h2, h3, h4, .font-serif {
 /* 3. COUPLE GALLERY SECTION */
 .gallery-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
   align-items: center;
 }
 
@@ -480,7 +475,7 @@ h1, h2, h3, h4, .font-serif {
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 45px rgba(251, 111, 146, 0.2);
   border: 1px solid var(--glass-border);
   background: var(--forest-green);
   contain: content;
@@ -509,7 +504,7 @@ h1, h2, h3, h4, .font-serif {
   object-fit: cover;
   display: block;
   transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
-  filter: brightness(0.94) contrast(1.04);
+  filter: brightness(0.96) contrast(1.02);
   decoding: async;
 }
 
@@ -520,7 +515,7 @@ h1, h2, h3, h4, .font-serif {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 65%, rgba(15, 34, 15, 0.85) 100%);
+  background: linear-gradient(180deg, transparent 65%, rgba(92, 15, 36, 0.75) 100%);
   pointer-events: none;
 }
 
@@ -529,7 +524,7 @@ h1, h2, h3, h4, .font-serif {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  color: var(--gold-light);
+  color: #ffe5ec;
   font-family: var(--font-heading);
   font-size: 1.3rem;
   font-style: italic;
@@ -546,7 +541,7 @@ h1, h2, h3, h4, .font-serif {
 }
 
 .detail-card-item {
-  background: rgba(22, 45, 21, 0.5);
+  background: rgba(255, 255, 255, 0.75);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
   padding: 32px 20px;
@@ -562,12 +557,12 @@ h1, h2, h3, h4, .font-serif {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: rgba(212, 175, 55, 0.12);
+  background: rgba(251, 111, 146, 0.12);
   border: 1px solid var(--gold-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold-light);
+  color: #fb6f92;
   margin-bottom: 4px;
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
 }
@@ -618,7 +613,7 @@ h1, h2, h3, h4, .font-serif {
 .quote-card {
   text-align: center;
   padding: 56px 24px;
-  background: radial-gradient(circle at center, rgba(49, 87, 44, 0.45) 0%, rgba(15, 34, 15, 0.65) 100%);
+  background: radial-gradient(circle at center, rgba(255, 194, 209, 0.6) 0%, rgba(255, 229, 236, 0.85) 100%);
 }
 
 .quote-symbol {
@@ -668,10 +663,10 @@ h1, h2, h3, h4, .font-serif {
   gap: 12px;
   padding: 16px 28px;
   min-height: 52px;
-  background: rgba(212, 175, 55, 0.12);
+  background: rgba(251, 111, 146, 0.12);
   border: 1px solid var(--gold-primary);
   border-radius: 50px;
-  color: var(--gold-light);
+  color: #7a1c36;
   text-decoration: none;
   font-family: var(--font-body);
   font-size: 1.1rem;
@@ -682,25 +677,25 @@ h1, h2, h3, h4, .font-serif {
 }
 
 .contact-box:hover, .contact-box:active {
-  background: rgba(212, 175, 55, 0.25);
+  background: rgba(251, 111, 146, 0.25);
   border-color: var(--gold-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 20px rgba(251, 111, 146, 0.3);
 }
 
 .contact-box svg {
   width: 20px;
   height: 20px;
-  fill: var(--gold-light);
+  fill: #fb6f92;
 }
 
 /* 7. FOOTER */
 .site-footer {
   text-align: center;
   padding: 48px 20px;
-  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  border-top: 1px solid rgba(251, 111, 146, 0.25);
   position: relative;
-  background: rgba(10, 23, 10, 0.95);
+  background: rgba(255, 229, 236, 0.95);
 }
 
 .footer-names {
@@ -793,7 +788,7 @@ h1, h2, h3, h4, .font-serif {
   position: fixed;
   inset: 0;
   z-index: 10000;
-  background: radial-gradient(ellipse at center, rgba(31, 59, 30, 0.98) 0%, rgba(10, 23, 10, 0.99) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 229, 236, 0.98) 0%, rgba(255, 194, 209, 0.99) 80%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -835,7 +830,7 @@ h1, h2, h3, h4, .font-serif {
 .loader-bar-wrap {
   width: 100%;
   height: 3px;
-  background: rgba(212, 175, 55, 0.2);
+  background: rgba(251, 111, 146, 0.2);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -862,9 +857,9 @@ h1, h2, h3, h4, .font-serif {
 .envelope-inner-card {
   text-align: center;
   padding: 44px 28px 36px;
-  background: rgba(22, 45, 21, 0.9);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--gold-primary);
-  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 35px 70px rgba(251, 111, 146, 0.25), 0 0 30px rgba(255, 179, 198, 0.3);
   border-radius: var(--radius-lg);
   position: relative;
 }
@@ -909,9 +904,9 @@ h1, h2, h3, h4, .font-serif {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #f6e6b4 0%, #d4af37 40%, #8b6508 100%);
-  border: 2px solid var(--gold-light);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), inset 0 2px 4px rgba(255, 255, 255, 0.6), 0 0 18px rgba(212, 175, 55, 0.4);
+  background: radial-gradient(circle at 35% 35%, #ffe5ec 0%, #ffc2d1 40%, #fb6f92 100%);
+  border: 2px solid #ffe5ec;
+  box-shadow: 0 10px 25px rgba(251, 111, 146, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.8), 0 0 18px rgba(255, 143, 171, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -921,16 +916,16 @@ h1, h2, h3, h4, .font-serif {
 .wax-seal-container:hover .wax-seal,
 .wax-seal-container:active .wax-seal {
   transform: scale(1.12) rotate(4deg);
-  box-shadow: 0 14px 35px rgba(212, 175, 55, 0.6), inset 0 2px 6px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 14px 35px rgba(251, 111, 146, 0.6), inset 0 2px 6px rgba(255, 255, 255, 0.8);
 }
 
 .wax-monogram {
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 700;
-  color: #132a13;
+  color: #ffffff;
   letter-spacing: 0.05em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 2px rgba(122, 28, 54, 0.5);
 }
 
 .wax-seal-hint {

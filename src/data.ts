@@ -48,7 +48,7 @@ export interface WeddingData {
   };
   gallery: {
     heroPortrait: GalleryPhoto;
-    roundedFrame: GalleryPhoto;
+    capturedMoments: GalleryPhoto[];
   };
   quote: {
     lines: string[];
@@ -90,15 +90,27 @@ export const weddingData: WeddingData = {
   },
   gallery: {
     heroPortrait: {
-      url: '/assets/hero_couple.png',
-      alt: 'Nimeshika and Jeewantha in elegant luxury wedding portrait',
+      url: '/assets/2.jpeg',
+      alt: 'Nimeshika & Jeewantha Main Wedding Portrait',
       caption: 'Nimeshika & Jeewantha',
     },
-    roundedFrame: {
-      url: '/assets/gallery_couple.png',
-      alt: 'Nimeshika and Jeewantha enjoying a romantic moment together',
-      caption: 'Forever & Always',
-    },
+    capturedMoments: [
+      {
+        url: '/assets/3.jpeg',
+        alt: 'Nimeshika & Jeewantha Captured Moment 1',
+        caption: 'Cherished Moments',
+      },
+      {
+        url: '/assets/1.jpeg',
+        alt: 'Nimeshika & Jeewantha Captured Moment 2',
+        caption: 'Love & Harmony',
+      },
+      {
+        url: '/assets/5.jpeg',
+        alt: 'Nimeshika & Jeewantha Captured Moment 3',
+        caption: 'Forever & Always',
+      },
+    ],
   },
   quote: {
     lines: [

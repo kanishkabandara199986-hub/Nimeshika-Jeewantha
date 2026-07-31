@@ -40,33 +40,33 @@ export function BotanicalFrame({
       {/* Main stem */}
       <path
         d="M20 140 Q60 100 100 70 Q140 40 180 20"
-        stroke="#7C9A7E"
+        stroke="#ff8fab"
         strokeWidth="1.5"
         fill="none"
         strokeLinecap="round"
       />
       {/* Branch 1 */}
-      <path d="M60 108 Q75 88 90 78" stroke="#7C9A7E" strokeWidth="1" fill="none" strokeLinecap="round" />
+      <path d="M60 108 Q75 88 90 78" stroke="#ff8fab" strokeWidth="1" fill="none" strokeLinecap="round" />
       {/* Branch 2 */}
-      <path d="M90 84 Q108 66 118 58" stroke="#7C9A7E" strokeWidth="1" fill="none" strokeLinecap="round" />
+      <path d="M90 84 Q108 66 118 58" stroke="#ff8fab" strokeWidth="1" fill="none" strokeLinecap="round" />
       {/* Branch 3 */}
-      <path d="M125 55 Q142 38 152 30" stroke="#7C9A7E" strokeWidth="1" fill="none" strokeLinecap="round" />
+      <path d="M125 55 Q142 38 152 30" stroke="#ff8fab" strokeWidth="1" fill="none" strokeLinecap="round" />
 
       {/* Leaves */}
-      <ellipse cx="48" cy="96" rx="14" ry="7" fill="#A8BFA9" opacity="0.7" transform="rotate(-40 48 96)" />
-      <ellipse cx="75" cy="75" rx="16" ry="8" fill="#7C9A7E" opacity="0.65" transform="rotate(-55 75 75)" />
-      <ellipse cx="100" cy="58" rx="13" ry="6" fill="#A8BFA9" opacity="0.6" transform="rotate(-45 100 58)" />
-      <ellipse cx="130" cy="42" rx="15" ry="7" fill="#7C9A7E" opacity="0.7" transform="rotate(-60 130 42)" />
-      <ellipse cx="160" cy="26" rx="12" ry="6" fill="#A8BFA9" opacity="0.55" transform="rotate(-50 160 26)" />
+      <ellipse cx="48" cy="96" rx="14" ry="7" fill="#ffc2d1" opacity="0.7" transform="rotate(-40 48 96)" />
+      <ellipse cx="75" cy="75" rx="16" ry="8" fill="#ff8fab" opacity="0.65" transform="rotate(-55 75 75)" />
+      <ellipse cx="100" cy="58" rx="13" ry="6" fill="#ffc2d1" opacity="0.6" transform="rotate(-45 100 58)" />
+      <ellipse cx="130" cy="42" rx="15" ry="7" fill="#ff8fab" opacity="0.7" transform="rotate(-60 130 42)" />
+      <ellipse cx="160" cy="26" rx="12" ry="6" fill="#ffc2d1" opacity="0.55" transform="rotate(-50 160 26)" />
 
       {/* Small berries */}
-      <circle cx="90" cy="68" r="3.5" fill="#7C9A7E" opacity="0.5" />
-      <circle cx="118" cy="50" r="2.5" fill="#C9A96E" opacity="0.4" />
-      <circle cx="152" cy="24" r="3" fill="#7C9A7E" opacity="0.45" />
+      <circle cx="90" cy="68" r="3.5" fill="#ff8fab" opacity="0.5" />
+      <circle cx="118" cy="50" r="2.5" fill="#fb6f92" opacity="0.4" />
+      <circle cx="152" cy="24" r="3" fill="#ff8fab" opacity="0.45" />
 
       {/* Extra decorative leaves */}
-      <ellipse cx="65" cy="110" rx="10" ry="5" fill="#5A7A5C" opacity="0.5" transform="rotate(-30 65 110)" />
-      <ellipse cx="145" cy="35" rx="11" ry="5.5" fill="#A8BFA9" opacity="0.6" transform="rotate(-65 145 35)" />
+      <ellipse cx="65" cy="110" rx="10" ry="5" fill="#fb6f92" opacity="0.5" transform="rotate(-30 65 110)" />
+      <ellipse cx="145" cy="35" rx="11" ry="5.5" fill="#ffb3c6" opacity="0.6" transform="rotate(-65 145 35)" />
     </svg>
   )
 

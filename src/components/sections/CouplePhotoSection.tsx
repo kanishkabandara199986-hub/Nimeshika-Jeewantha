@@ -25,18 +25,18 @@ export function CouplePhotoSection() {
       {/* Faint botanical corners */}
       <div className="absolute top-0 left-0 opacity-20 pointer-events-none">
         <svg width="140" height="140" viewBox="0 0 140 140" fill="none">
-          <path d="M10 130 Q40 80 80 50 Q110 25 130 10" stroke="#7C9A7E" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-          <ellipse cx="35" cy="95" rx="12" ry="6" fill="#A8BFA9" opacity="0.8" transform="rotate(-45 35 95)" />
-          <ellipse cx="65" cy="65" rx="14" ry="7" fill="#7C9A7E" opacity="0.7" transform="rotate(-55 65 65)" />
-          <ellipse cx="100" cy="35" rx="10" ry="5" fill="#A8BFA9" opacity="0.7" transform="rotate(-40 100 35)" />
+          <path d="M10 130 Q40 80 80 50 Q110 25 130 10" stroke="#ff8fab" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+          <ellipse cx="35" cy="95" rx="12" ry="6" fill="#ffc2d1" opacity="0.8" transform="rotate(-45 35 95)" />
+          <ellipse cx="65" cy="65" rx="14" ry="7" fill="#ff8fab" opacity="0.7" transform="rotate(-55 65 65)" />
+          <ellipse cx="100" cy="35" rx="10" ry="5" fill="#ffc2d1" opacity="0.7" transform="rotate(-40 100 35)" />
         </svg>
       </div>
       <div className="absolute top-0 right-0 opacity-20 pointer-events-none" style={{ transform: 'scaleX(-1)' }}>
         <svg width="140" height="140" viewBox="0 0 140 140" fill="none">
-          <path d="M10 130 Q40 80 80 50 Q110 25 130 10" stroke="#7C9A7E" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-          <ellipse cx="35" cy="95" rx="12" ry="6" fill="#A8BFA9" opacity="0.8" transform="rotate(-45 35 95)" />
-          <ellipse cx="65" cy="65" rx="14" ry="7" fill="#7C9A7E" opacity="0.7" transform="rotate(-55 65 65)" />
-          <ellipse cx="100" cy="35" rx="10" ry="5" fill="#A8BFA9" opacity="0.7" transform="rotate(-40 100 35)" />
+          <path d="M10 130 Q40 80 80 50 Q110 25 130 10" stroke="#ff8fab" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+          <ellipse cx="35" cy="95" rx="12" ry="6" fill="#ffc2d1" opacity="0.8" transform="rotate(-45 35 95)" />
+          <ellipse cx="65" cy="65" rx="14" ry="7" fill="#ff8fab" opacity="0.7" transform="rotate(-55 65 65)" />
+          <ellipse cx="100" cy="35" rx="10" ry="5" fill="#ffc2d1" opacity="0.7" transform="rotate(-40 100 35)" />
         </svg>
       </div>
 

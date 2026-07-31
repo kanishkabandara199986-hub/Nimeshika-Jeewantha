@@ -12,25 +12,25 @@ export function createHeroComponent(): HTMLElement {
   heroSection.innerHTML = `
     <!-- Royal Gold Glassmorphism Hero Panel -->
     <div class="hero-card glass-card reveal-fade-up">
-      <!-- Botanical Royal Gold Corner Ornaments -->
+      <!-- Botanical Royal Corner Ornaments -->
       <svg class="corner-decor top-left" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 90 C10 40, 40 10, 90 10" stroke="#f6e6b4" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <circle cx="90" cy="10" r="3" fill="#d4af37"/>
-        <path d="M25 75 C30 50, 50 30, 75 25" stroke="#d4af37" stroke-width="1"/>
-        <circle cx="25" cy="75" r="2" fill="#f6e6b4"/>
+        <path d="M10 90 C10 40, 40 10, 90 10" stroke="#ffb3c6" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <circle cx="90" cy="10" r="3" fill="#fb6f92"/>
+        <path d="M25 75 C30 50, 50 30, 75 25" stroke="#ff8fab" stroke-width="1"/>
+        <circle cx="25" cy="75" r="2" fill="#ffc2d1"/>
       </svg>
       <svg class="corner-decor top-right" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 90 C10 40, 40 10, 90 10" stroke="#f6e6b4" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <circle cx="90" cy="10" r="3" fill="#d4af37"/>
-        <path d="M25 75 C30 50, 50 30, 75 25" stroke="#d4af37" stroke-width="1"/>
+        <path d="M10 90 C10 40, 40 10, 90 10" stroke="#ffb3c6" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <circle cx="90" cy="10" r="3" fill="#fb6f92"/>
+        <path d="M25 75 C30 50, 50 30, 75 25" stroke="#ff8fab" stroke-width="1"/>
       </svg>
       <svg class="corner-decor bottom-left" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 90 C10 40, 40 10, 90 10" stroke="#f6e6b4" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <circle cx="90" cy="10" r="3" fill="#d4af37"/>
+        <path d="M10 90 C10 40, 40 10, 90 10" stroke="#ffb3c6" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <circle cx="90" cy="10" r="3" fill="#fb6f92"/>
       </svg>
       <svg class="corner-decor bottom-right" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 90 C10 40, 40 10, 90 10" stroke="#f6e6b4" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <circle cx="90" cy="10" r="3" fill="#d4af37"/>
+        <path d="M10 90 C10 40, 40 10, 90 10" stroke="#ffb3c6" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <circle cx="90" cy="10" r="3" fill="#fb6f92"/>
       </svg>
 
       <!-- Invitation Tagline -->
@@ -40,7 +40,7 @@ export function createHeroComponent(): HTMLElement {
       <div class="botanical-divider">
         <div class="line"></div>
         <svg class="leaf-icon" viewBox="0 0 24 24">
-          <path d="M17,8C14,8 10,10 8,14C10,13.5 12,13 14,13.5C12.5,15 11,17 10.5,19C12.5,18 15,16.5 16,14.5C17,12.5 17.5,10 17,8Z" fill="#f6e6b4" />
+          <path d="M17,8C14,8 10,10 8,14C10,13.5 12,13 14,13.5C12.5,15 11,17 10.5,19C12.5,18 15,16.5 16,14.5C17,12.5 17.5,10 17,8Z" fill="#ff8fab" />
         </svg>
         <div class="line"></div>
       </div>

@@ -25,7 +25,7 @@ export function ParentsSection() {
           <svg width="24" height="22" viewBox="0 0 24 22" fill="none">
             <path
               d="M12 20.5C12 20.5 2 14 2 7.5C2 4.46 4.46 2 7.5 2C9.24 2 10.91 2.81 12 4.08C13.09 2.81 14.76 2 16.5 2C19.54 2 22 4.46 22 7.5C22 14 12 20.5 12 20.5Z"
-              fill="#C9A96E"
+              fill="#fb6f92"
               opacity="0.6"
             />
           </svg>

@@ -18,7 +18,7 @@ export function BibleVerseSection() {
       {/* Subtle background botanical */}
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-5">
         <svg width="400" height="300" viewBox="0 0 400 300" fill="none">
-          <ellipse cx="200" cy="150" rx="180" ry="110" fill="#7C9A7E" />
+          <ellipse cx="200" cy="150" rx="180" ry="110" fill="#ffc2d1" />
         </svg>
       </div>
 

@@ -33,7 +33,7 @@ export function createStoryComponent(): HTMLElement {
       </p>
 
       <!-- Signature Touch -->
-      <div style="margin-top: 36px; font-family: var(--font-heading); font-size: 1.8rem; color: var(--light-cream); font-style: italic;">
+      <div style="margin-top: 36px; font-family: var(--font-heading); font-size: 1.8rem; color: var(--gold-primary); font-style: italic;">
         ${weddingData.couple.brideName} & ${weddingData.couple.groomName}
       </div>
     </div>

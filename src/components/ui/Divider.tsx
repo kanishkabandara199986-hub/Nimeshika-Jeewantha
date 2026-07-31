@@ -15,16 +15,16 @@ export function Divider({ variant = 'gold', className = '', width = 120 }: Divid
   const inView = useInView(ref as React.RefObject<Element>, { once: true, margin: '-40px' })
   const prefersReduced = useReducedMotion()
 
-  const color = variant === 'sage' ? '#7C9A7E' : '#C9A96E'
+  const color = variant === 'sage' ? '#fb6f92' : '#ff8fab'
 
   if (variant === 'botanical') {
     return (
       <div className={`flex items-center justify-center gap-3 ${className}`}>
         <div className="h-px flex-1 max-w-[80px]" style={{ background: color }} />
         <svg width="32" height="20" viewBox="0 0 32 20" fill="none">
-          <ellipse cx="8" cy="10" rx="7" ry="4" fill="#A8BFA9" opacity="0.7" transform="rotate(-30 8 10)" />
-          <ellipse cx="16" cy="10" rx="5" ry="3" fill="#7C9A7E" opacity="0.8" />
-          <ellipse cx="24" cy="10" rx="7" ry="4" fill="#A8BFA9" opacity="0.7" transform="rotate(30 24 10)" />
+          <ellipse cx="8" cy="10" rx="7" ry="4" fill="#ffc2d1" opacity="0.7" transform="rotate(-30 8 10)" />
+          <ellipse cx="16" cy="10" rx="5" ry="3" fill="#fb6f92" opacity="0.8" />
+          <ellipse cx="24" cy="10" rx="7" ry="4" fill="#ffc2d1" opacity="0.7" transform="rotate(30 24 10)" />
         </svg>
         <div className="h-px flex-1 max-w-[80px]" style={{ background: color }} />
       </div>

@@ -70,7 +70,7 @@ export function TimelineSection() {
                 {/* Icon bubble */}
                 <motion.div
                   className="relative z-10 flex-shrink-0 w-9 h-9 rounded-full bg-ivory border border-sage/40 flex items-center justify-center text-sage text-base shadow-sm"
-                  whileHover={{ scale: 1.1, borderColor: '#7C9A7E' }}
+                  whileHover={{ scale: 1.1, borderColor: '#fb6f92' }}
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
                 >
                   {ICON_MAP[item.icon] ?? <RiStarLine />}

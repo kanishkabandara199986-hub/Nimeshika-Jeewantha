@@ -101,13 +101,16 @@ export const weddingConfig = {
   brand: 'AreOne',
   footerYear: 2026,
 
-  // Photos (Unsplash placeholder URLs — replace with real couple photos)
+  // Photos
   photos: {
-    hero: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80',
-    couple:
-      'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=900&q=80',
-    closing:
-      'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=900&q=80',
+    hero: '/assets/2.jpeg',
+    couple: '/assets/2.jpeg',
+    capturedMoments: [
+      '/assets/3.jpeg',
+      '/assets/1.jpeg',
+      '/assets/5.jpeg',
+    ],
+    closing: '/assets/5.jpeg',
   },
 } as const
 

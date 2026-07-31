@@ -72,13 +72,13 @@ export function initCanvasBotanicals(): void {
   const petals: FloatingPetal[] = [];
   const count = window.innerWidth < 768 ? 28 : 50;
 
-  // Romantic luxury color palette for petals: Golden cream, soft blush, and botanical green
+  // Romantic soft light pink color palette for floating petals
   const petalColors = [
-    '#f6e6b4', // Royal Gold Light
-    '#d4af37', // Metallic Gold
-    '#ecf39e', // Light Botanical Cream
-    '#ffe4e1', // Soft Rose Petal Blush
-    '#e6ca65', // Warm Gold Accent
+    '#ffe5ec',
+    '#ffc2d1',
+    '#ffb3c6',
+    '#ff8fab',
+    '#fb6f92',
   ];
 
   for (let i = 0; i < count; i++) {
@@ -137,13 +137,13 @@ export function initCanvasBotanicals(): void {
   }
 
   /**
-   * Draw a glowing golden sparkle particle
+   * Draw a glowing rose sparkle particle
    */
   function drawSparkle(context: CanvasRenderingContext2D, size: number) {
     context.beginPath();
     context.arc(0, 0, size, 0, Math.PI * 2);
-    context.fillStyle = '#ffd700';
-    context.shadowColor = '#f6e6b4';
+    context.fillStyle = '#fb6f92';
+    context.shadowColor = '#ffc2d1';
     context.shadowBlur = 8;
     context.fill();
     context.shadowBlur = 0;
@@ -282,8 +282,8 @@ export function initAudioPlayer(): void {
         isPlaying = true;
         btn.innerHTML = pauseSvg;
         btn.classList.add('pulse-glow');
-        btn.style.borderColor = '#f6e6b4';
-        btn.style.boxShadow = '0 0 20px rgba(246, 230, 180, 0.8), 0 0 35px rgba(212, 175, 55, 0.4)';
+        btn.style.borderColor = '#ff8fab';
+        btn.style.boxShadow = '0 0 20px rgba(255, 143, 171, 0.8), 0 0 35px rgba(251, 111, 146, 0.4)';
       }).catch((err) => {
         console.warn('Audio playback pending user gesture:', err);
       });
@@ -292,7 +292,7 @@ export function initAudioPlayer(): void {
       isPlaying = false;
       btn.innerHTML = playSvg;
       btn.classList.remove('pulse-glow');
-      btn.style.borderColor = '#d4af37';
+      btn.style.borderColor = '#fb6f92';
       btn.style.boxShadow = 'none';
     }
   };
