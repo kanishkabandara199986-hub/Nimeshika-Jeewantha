@@ -96,7 +96,7 @@ export const weddingData: WeddingData = {
     },
     capturedMoments: [
       {
-        url: '/assets/3.jpeg',
+        url: '/assets/3v.jpeg',
         alt: 'Nimeshika & Jeewantha Captured Moment 1',
         caption: 'Cherished Moments',
       },
@@ -106,7 +106,7 @@ export const weddingData: WeddingData = {
         caption: 'Love & Harmony',
       },
       {
-        url: '/assets/5.jpeg',
+        url: '/assets/5v.jpeg',
         alt: 'Nimeshika & Jeewantha Captured Moment 3',
         caption: 'Forever & Always',
       },

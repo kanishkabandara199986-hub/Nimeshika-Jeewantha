@@ -2,7 +2,7 @@ import { weddingData } from '../data';
 
 /**
  * Gallery Component
- * Displays "Captured Moments" section featuring 3 romantic photos (3.jpeg, 1.jpeg, 5.jpeg).
+ * Displays "Captured Moments" section featuring 3 romantic photos (3v.jpeg, 1.jpeg, 5v.jpeg).
  * Mobile-first design, optimized for fast loading and smooth visual presentation.
  */
 export function createGalleryComponent(): HTMLElement {

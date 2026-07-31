@@ -106,11 +106,11 @@ export const weddingConfig = {
     hero: '/assets/2.jpeg',
     couple: '/assets/2.jpeg',
     capturedMoments: [
-      '/assets/3.jpeg',
+      '/assets/3v.jpeg',
       '/assets/1.jpeg',
-      '/assets/5.jpeg',
+      '/assets/5v.jpeg',
     ],
-    closing: '/assets/5.jpeg',
+    closing: '/assets/5v.jpeg',
   },
 } as const
 
